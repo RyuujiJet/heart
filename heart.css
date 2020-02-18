@@ -1,14 +1,18 @@
 *{margin:0;padding:0;box-sizing: border-box;}
-
 #heart{
     margin-top: 200px;
     margin-left: 50%;
     position: relative;
     display: inline-block;
-    transition: all 1s;
+    animation: heart 800ms infinite alternate;
 }
-#heart:hover{
-    transform: scale(1.5);
+@keyframes heart{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(2.0);
+    }
 }
 #heart>.bottom{
     width: 100px;
